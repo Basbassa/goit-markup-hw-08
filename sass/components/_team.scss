@@ -1,0 +1,74 @@
+.team {
+  background-color: $color-halfWhite;
+
+  @extend .main-page__description-main;
+
+  @extend .section;
+
+  &__ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__shadow {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.14);
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0, 3em;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: -1px;
+
+    &--occupation {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.17;
+      letter-spacing: 0, 3em;
+      text-align: center;
+      font-style: normal;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__figcap {
+    background-color: $color-mainWhite;
+    border-right: 2px solid $color-BorderFigacap;
+    border-left: 2px solid $color-BorderFigacap;
+    border-bottom: 2px solid $color-BorderFigacap;
+  }
+
+  &__ull {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    fill: $color-SocialIcons;
+    margin-bottom: 30px;
+  }
+
+  &__icons:hover {
+    fill: $color-mainWhite;
+    background-color: $color-mainBlue;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

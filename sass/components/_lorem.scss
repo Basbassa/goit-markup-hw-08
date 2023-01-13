@@ -1,0 +1,27 @@
+.lorem {
+  list-style-type: none;
+  display: flex;
+
+  &__lorem {
+    max-width: 270px;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0, 3em;
+    color: $color-description;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    &--small {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0, 3em;
+      color: $color-color-description-small-letters;
+    }
+  }
+}

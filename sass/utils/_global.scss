@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0px;
+}
+
+.mail-hover :hover {
+  text-decoration: underline;
+}
+
+.all-links :focus {
+  color: $color-FocusAllLinks;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-page__description-main {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0, 3em;
+  text-align: center;
+  
+}
+
+.main-page__section-clients {
+  margin-top: 94px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.8;
+  letter-spacing: 0, 3em;
+  text-align: center;
+}

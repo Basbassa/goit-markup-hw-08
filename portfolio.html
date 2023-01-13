@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://github.com/sindresorhus/modern-normalize/blob/0c3cb3a7dcf0fb4242a8736127a1d717b704c360/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__class">
+        <div class="header__nav-flex">
+          <div class="header__logo">
+            <a class="all-links" href="index.html"
+              ><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
+            >
+          </div>
+          <nav>
+            <ul class="header__nav-ul">
+              <li>
+                <a class="header__links all-links" href="index.html">Agencja</a>
+              </li>
+              <li>
+                <a class="header__links all-links header__active-link" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="header__links all-links" href="/">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__nav-flex header__nav-flex--gap">
+          <div class="mail-hover header__nav-ul all-links">
+            <a class="header__mail-phone" href="mailto:info@devstudio.com"
+              ><svg class="header__contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </div>
+          <div class="mail-hover header__nav-ul">
+            <a class="header__mail-phone all-links" href="tel:+48111111111"
+              ><svg class="header__contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="portf">
+      <div class="container">
+        <ul class="portf__flex-buttons">
+          <li class="portf__buttons-hov">
+            <button class="portf__button" type="button">Wszystkie</button>
+          </li>
+          <li class="portf__buttons-hov">
+            <button class="portf__button" type="button">Strony</button>
+          </li>
+          <li class="portf__buttons-hov">
+            <button class="portf__button" type="button">Aplikacje</button>
+          </li>
+          <li class="portf__buttons-hov">
+            <button class="portf__button" type="button">Dizajn</button>
+          </li>
+          <li class="portf__buttons-hov">
+            <button class="portf__button" type="button">Marketing</button>
+          </li>
+        </ul>
+
+        <ul class="portf__flex-images">
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/threePeople.jpg"
+                  alt="Wyświetlona jest ikona laptopa, w której prezentuje się stworzona strona internetowa. Na niej znajduje się trójka ludzi. Dwie kobiety po bokach i mężczyzna w środku."
+                  width="370"
+                  height="294"
+                />
+
+                <div class="portf__overlay-figure">
+                  <p>
+                    Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
+                    niezabezpieczone serwery konkurencji.
+                  </p>
+                </div>
+              </div>
+
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Technocrack</h3>
+                <p class="portf__description--thin">Strona internetowa</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/nba.jpg"
+                  alt="Rysunkowa grafika dwój graczy koszykówki. Jeden jest ubrany w filetowy ubiór sportowy i stara się trafić piłką do kosza, drugi, który broni, ubrany jest na biało i próbuje wybić piłkę. "
+                  width="370"
+                  height="294"
+                />
+                <div class="portf__overlay-figure">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore quasi
+                    nemo quod amet, nobis explicabo doloribus pariatur, quas recusandae, itaque
+                    cumque cupiditate illo corporis? Quae commodi cum quasi tempore.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Grafika New Orlean vs Golden Star</h3>
+                <p class="portf__description--thin">Dizajn</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/seafood.jpg"
+                  alt="Logo przedstawia wyskakującą rysunkową rybę stylizowaną na pstrąga, która zawiera w sobie napis „The Seafood Est. 2001 restaurant”."
+                  width="370"
+                  height="294"
+                />
+                <div class="portf__overlay-figure">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore quasi
+                    nemo quod amet, nobis explicabo doloribus pariatur, quas recusandae, itaque
+                    cumque cupiditate illo corporis? Quae commodi cum quasi tempore.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Restauracja Seafood</h3>
+                <p class="portf__description--thin">Aplikacja</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/headphones.jpg"
+                  alt="Czarne słuchawki nauszne na białym tle."
+                  width="370"
+                  height="294"
+                />
+                <div class="portf__overlay-figure">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore quasi
+                    nemo quod amet, nobis explicabo doloribus pariatur, quas recusandae, itaque
+                    cumque cupiditate illo corporis? Quae commodi cum quasi tempore.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Projekt Prime</h3>
+                <p class="portf__description--thin">Marketing</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/boxes.jpg"
+                  alt="Dwa pudełka: jedno białe, drugie brązowe."
+                  width="370"
+                  height="294"
+                />
+                <div class="portf__overlay-figure">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore quasi
+                    nemo quod amet, nobis explicabo doloribus pariatur, quas recusandae, itaque
+                    cumque cupiditate illo corporis? Quae commodi cum quasi tempore.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Projekt Boxes</h3>
+                <p class="portf__description--thin">Aplikacja</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/monitor.jpg"
+                  alt="Monitor marki Apple wyświetlający ciemną stronę internetowa, która przedstawia mapę świata z zaznaczonymi punktami."
+                  width="370"
+                  height="294"
+                />
+                <div class="portf__overlay-figure">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore quasi
+                    nemo quod amet, nobis explicabo doloribus pariatur, quas recusandae, itaque
+                    cumque cupiditate illo corporis? Quae commodi cum quasi tempore.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Inspiration has no Borders</h3>
+                <p class="portf__description--thin">Strona internetowa</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/magazine.jpg"
+                  alt="Otwarty magazyn, w którym znajduje się reklama suszarki do włosów, oraz zdjęcie dwóch młodych dziewczyn ilustrujące reportaż o młodym pokoleniu uważające się za unikatowe. "
+                  width="370"
+                  height="294"
+                />
+                <div class="portf__overlay-figure">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore quasi
+                    nemo quod amet, nobis explicabo doloribus pariatur, quas recusandae, itaque
+                    cumque cupiditate illo corporis? Quae commodi cum quasi tempore.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Magazyn Limited Edition</h3>
+                <p class="portf__description--thin">Dizajn</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/tag.jpg"
+                  alt="Biała zawieszka na złotym sznurku z napisem LAB EL TAG."
+                  width="370"
+                  height="294"
+                />
+                <div class="portf__overlay-figure">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore quasi
+                    nemo quod amet, nobis explicabo doloribus pariatur, quas recusandae, itaque
+                    cumque cupiditate illo corporis? Quae commodi cum quasi tempore.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Projekt LAB</h3>
+                <p class="portf__description--thin">Marketing</p>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="portf__shadow portf__schedule-li">
+            <figure class="portf__figure-border">
+              <div class="portf__box-figure">
+                <img
+                  src="images/portfolio/laptop.jpg"
+                  alt="Szary otwarty laptop, na którym piszą coś dwie dłonie. Na ekranie wyświetla się reklama aplikacja Growing Business."
+                  width="370"
+                  height="294"
+                />
+                <div class="portf__overlay-figure">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore quasi
+                    nemo quod amet, nobis explicabo doloribus pariatur, quas recusandae, itaque
+                    cumque cupiditate illo corporis? Quae commodi cum quasi tempore.
+                  </p>
+                </div>
+              </div>
+              <figcaption class="portf__figcaption portf__zindex-3">
+                <h3 class="portf__description">Growing Business</h3>
+                <p class="portf__description--thin">Aplikacja</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__flex">
+        <div class="footer__first-half">
+          <a class="all-links" href="index.html"
+            ><span class="logo__web footer__font-logo">Web</span
+            ><span class="logo__studio logo__studio--white footer__font-logo">Studio</span></a
+          >
+          <address class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+          <div class="mail-hover all-links">
+            <a class="footer__address footer__address--grey" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </div>
+          <div class="mail-hover all-links">
+            <a class="footer__address footer__address--grey" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__second-half">
+          <h2 class="footer__h2">Dołącz do nas</h2>
+          <ul class="footer__social-div-footer">
+            <li class="footer__sm-icons">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </li>
+            <li class="footer__sm-icons">
+              <svg width="20" height="20"><use href="./images/icons.svg#icon-twitter-1"></use></svg>
+            </li>
+            <li class="footer__sm-icons">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </li>
+            <li class="footer__sm-icons">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <form>
+            <label class="footer__label-newsletter">
+              Zapisz się do newslettera <br />
+              <input
+                class="footer__input"
+                type="text"
+                name="mailto"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="footer__button" type="submit">
+              Zapisz się
+              <svg class="footer__svg-send" width="24" height="24">
+                <use href="./images/form-icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

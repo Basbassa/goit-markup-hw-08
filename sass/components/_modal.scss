@@ -1,0 +1,204 @@
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  min-height: 581px;
+  background-color: $color-mainWhite;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+
+  &__modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $color-mainWhite;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__h3-form {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  &__relative-icons-form {
+    position: relative;
+  }
+
+  &__modal-form input {
+    background-color: $color-mainWhite;
+    width: 448px;
+    height: 40px;
+    border: 1px solid $color-ModalFormBorder;
+    border-radius: 4px;
+    padding-left: 40px;
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0, 1em;
+    color: $color-color-description-small-letters;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+
+  &__modal-form {
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
+
+  &__modal-form:hover {
+    fill: $color-mainBlue;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__modal-form:hover .modal__my-input {
+    border-color: $color-mainBlue;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__my-input:focus {
+    border-color: $color-mainBlue;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__focus-fill-ic:focus-within {
+    fill: $color-mainBlue;
+  }
+
+  &__icons-form {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 5;
+  }
+
+  &__icons-form:hover,
+  &__icons-form:focus,
+  &__icons-form:active {
+    fill: $color-mainBlue;
+    border-color: $color-mainBlue;
+    outline: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__checkbox {
+    padding-top: 20px;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $color-color-description-small-letters;
+    line-height: 1.7;
+    letter-spacing: 0, 3em;
+  }
+
+  &__links-checbox {
+    color: $color-mainBlue;
+    text-decoration: underline;
+  }
+
+  input &__checkbox {
+    width: 16px;
+    height: 15px;
+  }
+
+  &__form-btn-submit {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: $color-mainBlue;
+    color: $color-mainWhite;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0, 6em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    transform: translateX(50%);
+    outline: none;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  &__label-identyfications {
+    margin: 40px;
+  }
+
+  textarea {
+    margin-top: 4px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid $color-ModalFormBorder;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    border-radius: 4px;
+    padding: 12px 16px;
+    outline: none;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__checkbox {
+    position: relative;
+  }
+
+  &__checkbox input {
+    margin-right: 9px;
+  }
+
+  &__check-input-svg {
+    background-color: $color-mainBlue;
+    fill: $color-mainWhite;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    opacity: 0;
+    border-radius: 2px;
+  }
+
+  .checkbox input[type="checkbox"]:checked + svg {
+    opacity: 1;
+  }
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+}
