@@ -94,6 +94,12 @@ a {
   list-style-type: none;
 }
 
+.header__menu-mobile {
+  background-color: yellow;
+  fill: var(--color-button-portf);
+  
+}
+
 .header__links {
   color: var(--color-nav-ul-a);
   font-weight: 500;
