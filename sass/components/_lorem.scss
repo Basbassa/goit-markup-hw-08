@@ -1,13 +1,15 @@
 .lorem {
-  list-style-type: none;
-  display: flex;
+  &__ul {
+    list-style-type: none;
+    display: flex;
+  }
 
   &__lorem {
     max-width: 270px;
     margin-bottom: 30px;
   }
 
-  &__description {
+  &_description {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
@@ -15,7 +17,6 @@
     color: $color-description;
     margin-bottom: 10px;
     text-transform: uppercase;
-
     &--small {
       font-weight: 400;
       font-size: 14px;

@@ -94,12 +94,6 @@ a {
   list-style-type: none;
 }
 
-.header__menu-mobile {
-  background-color: yellow;
-  fill: var(--color-button-portf);
-  
-}
-
 .header__links {
   color: var(--color-nav-ul-a);
   font-weight: 500;
@@ -160,7 +154,9 @@ a {
 
 /* main-page  */
 
-.headlamp__box-h1 {
+
+
+.headlamp {
   max-width: 1600px;
   background-image: url("../images/banners/main-banner.jpg"),
     linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%);
@@ -208,6 +204,10 @@ a {
 }
 
 .lorem {
+
+}
+
+.lorem__ul {
   list-style-type: none;
   display: flex;
 }
@@ -245,6 +245,9 @@ a {
 }
 
 .skills {
+}
+
+.skills__ull {
   list-style-type: none;
   display: flex;
   gap: 30px;
@@ -355,11 +358,15 @@ a {
 }
 
 .clients {
+
+}
+
+.clients__ul {
   fill: var(--color-social-icons);
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  padding-top: 0;
+  
 }
 
 .clients__icons {

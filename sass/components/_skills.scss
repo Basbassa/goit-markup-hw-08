@@ -1,32 +1,33 @@
 .skills {
-  list-style-type: none;
-  display: flex;
-  gap: 30px;
-  margin-bottom: 94px;
-  
-@extend .main-page__description-main;
-  
-&__photo {
-  position: relative;
-  margin-top: 50px;
-}
+  @extend .main-page__description-main;
 
-&__we-do {
-  position: absolute;
-  bottom: 0;
-  width: 370px;
-  height: 70px;
-  background-color: $color-SkillsWeDo;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0, 3em;
-  text-align: center;
-  padding: 27px 90px;
-  color: $color-mainWhite;
-  z-index: 1;
-  margin-bottom: 3px;
-  text-transform: uppercase;
-}
-}
+  &__ull {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 94px;
+  }
 
+  &__photo {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  &__we-do {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0, 3em;
+    text-align: center;
+    padding: 27px 90px;
+    color: $color-mainWhite;
+    z-index: 1;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+  }
+}

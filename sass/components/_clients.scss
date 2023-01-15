@@ -1,13 +1,16 @@
 .clients {
-  fill: $color-SocialIcons;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
   padding-top: 0;
 
   @extend .container;
   @extend .main-page__section-clients;
   @extend .section;
+
+  &__ul {
+    fill: $color-SocialIcons;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
 
   &__icons {
     width: 170px;
