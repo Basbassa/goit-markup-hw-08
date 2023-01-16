@@ -1,3 +1,16 @@
+@media screen and (max-width: $breakpointPhoneEnd) {
+  .header__menu-main,
+  .header__menu-contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $breakpointTabletStart) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 .menu-toggle {
   outline: none;
   background: none;
