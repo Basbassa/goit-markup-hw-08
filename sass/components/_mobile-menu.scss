@@ -1,11 +1,11 @@
-@media screen and (max-width: $breakpointPhoneEnd) {
-  .header__menu-main,
-  .header__menu-contact {
+@media screen and (max-width: 767px) {
+  .header__nav-ul,
+  .header__nav-ul {
     display: none;
   }
 }
 
-@media screen and (min-width: $breakpointTabletStart) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
