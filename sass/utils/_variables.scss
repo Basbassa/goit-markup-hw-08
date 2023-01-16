@@ -17,3 +17,11 @@ $color-SocialIcons: rgba(175, 177, 184, 1);
 $color-FooterMailBorder: rgba(255, 255, 255, 0.3);
 $color-ModalFormBorder: rgba(33, 33, 33, 0.2);
 $color-SkillsWeDo: rgba(47, 48, 58, 0.8);
+
+$transitionDurationDefault: 250ms;
+$transitionTimingDefault: cubic-bezier(0.4, 0, 0.2, 1);
+
+$breakpointPhoneEnd: 767px;
+$breakpointTabletStart: 768px;
+$breakpointTabletEnd: 1199px;
+$breakpointDesktopStart: 1200px;
