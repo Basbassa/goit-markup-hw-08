@@ -21,7 +21,7 @@
     z-index: 6;
   }
 
-  &.menu-toggle {
+  & .menu-toggle {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -41,13 +41,14 @@
   }
 
   &__icon--close {
+    fill: $color-description;
     transition-property: transform;
     transition-duration: 1000ms;
     transition-timing-function: ease;
   }
 
   &__icon--close:hover {
-    transform: rotate(45deg);
+    transform: rotate(100deg);
   }
 
   &__content {
