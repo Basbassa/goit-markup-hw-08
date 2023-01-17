@@ -1,6 +1,10 @@
 .skills {
   @extend .main-page__description-main;
 
+  @media screen and (min-width: $BPointPhoneStart) and (max-width: $BPointtTabletEnd) {
+    display: none;
+  }
+
   &__ull {
     list-style-type: none;
     display: flex;

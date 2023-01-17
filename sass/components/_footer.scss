@@ -7,6 +7,27 @@
   &__flex {
     display: flex;
     padding-top: 60px;
+    /* mobile */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  @media screen and (min-width: $BPointTabletStart) {
+    .footer__flex {
+    }
+
+    .footer__label-newsletter .footer__button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (min-width: $BPointDesktopStart) {
+    .footer__flex {
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
   }
 
   &__first-half {
