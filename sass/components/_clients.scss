@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   &__icons {
@@ -18,8 +22,10 @@
     border: 1px solid $color-SocialIcons;
     border-radius: 4px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 30px;
   }
 
   &__icons:hover,
