@@ -118,3 +118,41 @@
     margin-bottom: 20px;
   }
 }
+
+@media screen and (min-width: $BPointPhoneStart) {
+}
+
+@media screen and (min-width: $BPointTabletStart) {
+  .footer__logo-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo__studio--white {
+    margin: 0;
+  }
+
+  .footer__under-logo {
+    text-align: center;
+  }
+
+  .logo__web {
+    padding-left: 0;
+  }
+
+  .footer__flex {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer__newsletter {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
