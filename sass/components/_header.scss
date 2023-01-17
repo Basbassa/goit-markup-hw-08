@@ -75,7 +75,7 @@
 
 /* ---------- tablet ---------- */
 
-@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+@media screen and (min-width: $BPointTabletStart) and (max-width: $BPointtTabletEnd) {
   .all-links {
     margin: 2px;
     padding: 1px;
@@ -105,7 +105,7 @@
 
 /* ---------- deskop ---------- */
 
-@media screen and (min-width: $breakpointDesktopStart) {
+@media screen and (min-width: $BPointDesktopStart) {
   .header {
     padding: 32px;
   }
