@@ -72,3 +72,41 @@
     }
   }
 }
+
+/* ---------- tablet ---------- */
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .all-links {
+    margin: 2px;
+    padding: 1px;
+  }
+
+  .logo__web {
+    padding-left: 15px;
+  }
+
+  .header__nav-ul {
+    gap: 60px;
+  }
+
+  .header__nav-flex--gap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-right: 15px;
+  }
+
+  .header__mail-phone {
+    font-size: 12px;
+  }
+}
+
+/* ---------- deskop ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+  .header {
+    padding: 32px;
+  }
+}
