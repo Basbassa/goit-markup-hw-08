@@ -142,6 +142,11 @@
     padding-left: 0;
   }
 
+  .footer__h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   .footer__flex {
     flex-direction: row;
     justify-content: space-around;
@@ -154,5 +159,19 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .footer__newsletter {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__div-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
   }
 }
