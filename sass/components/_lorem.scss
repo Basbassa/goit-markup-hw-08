@@ -11,18 +11,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     flex-direction: column;
     text-align: left;
     padding-left: 15px;
     padding-right: 15px;
-    
+  }
+
+  @media screen and (min-width: $BPointTabletStart) {
+    .lorem__li {
+      flex-basis: calc((100% - 2rem) / 2);
+    }
+
+    .lorem__lorem {
+      max-width: 354px;
+      max-height: 120px;
+    }
   }
 
   @media screen and (min-width: $BPointDesktopStart) {
+    .lorem__ul {
+      flex-wrap: nowrap;
+    }
+
     .lorem__li {
       flex-wrap: nowrap;
-      flex-direction: row;
     }
   }
 
