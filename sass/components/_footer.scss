@@ -126,7 +126,6 @@
 @media screen and (min-width: $BPointPhoneStart) and (max-width: $BPointPhoneEnd) {
   .footer {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
   }
@@ -150,8 +149,23 @@
     padding-left: 0;
   }
 
+  .footer__first-half {
+    margin-top: 60px;
+    display: inline-block;
+    width: 100%;
+  }
+
   .footer__second-half {
     margin-top: 60px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .social-div-footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer__h2 {
