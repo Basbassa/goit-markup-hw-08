@@ -235,11 +235,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
   }
 
   .footer__div-button {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
   }
 }
