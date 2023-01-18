@@ -161,16 +161,15 @@
     width: 100%;
   }
 
-  .social-div-footer {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .footer__h2 {
     text-align: center;
     padding-bottom: 20px;
+  }
+
+  .social-div-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .footer__flex {
