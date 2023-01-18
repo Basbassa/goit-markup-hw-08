@@ -52,20 +52,28 @@
 .headlamp {
   @media (min-width: $BPointPhoneStart) {
     background-image: url("../images/mobile/bannerMobile.png");
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url("../images/mobile/bannerMobile@2x.png");
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   @media (min-width: $BPointTabletStart) {
     background-image: url("../images/tablet/bannerTablet.png");
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url("../images/tablet/bannerTablet@2x.png");
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
