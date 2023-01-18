@@ -37,3 +37,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+@media screen and (min-width: $BPointPhoneStart) and (max-width: $BPointPhoneEnd) {
+  .clients__icons {
+    width: 100%;
+
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
