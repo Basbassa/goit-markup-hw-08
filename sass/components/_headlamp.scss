@@ -1,6 +1,6 @@
 .headlamp {
   max-width: 1600px;
-  background-image: url("../images/banners/main-banner.jpg"),
+  background-image: url("../images/banners/banner-pc.jpg"),
     linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%);
   background-size: 1600px;
   background-position: center;
@@ -8,6 +8,10 @@
   color: $color-mainWhite;
   text-align: center;
   margin: 0 auto;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("../images/banners/banner-pc@2x.png");
+  }
 
   &__description-h1 {
     font-weight: 900;
@@ -45,9 +49,23 @@
   }
 }
 
-
-
-
 .headlamp {
+  @media (min-width: $BPointPhoneStart) {
+    background-image: url("../images/mobile/bannerMobile.png");
+    background-position: center;
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("../images/mobile/bannerMobile@2x.png");
+    background-position: center;
+  }
 
+  @media (min-width: $BPointTabletStart) {
+    background-image: url("../images/tablet/bannerTablet.png");
+    background-position: center;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url("../images/tablet/bannerTablet@2x.png");
+    background-position: center;
+  }
 }
