@@ -117,6 +117,10 @@
     display: inline-block;
     margin-bottom: 20px;
   }
+
+  &__div-button {
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: $BPointPhoneStart) and (max-width: $BPointPhoneEnd) {
