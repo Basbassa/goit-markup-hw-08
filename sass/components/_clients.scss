@@ -42,6 +42,16 @@
   .clients__icons {
     width: 100%;
 
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: $BPointTabletStart) and (max-width: $BPointtTabletEnd) { 
+
+  .clients__icons {
+    width: 100%;
+
     flex-basis: calc((100% - 30px) / 3);
   }
+
 }
