@@ -8,12 +8,14 @@
   &__ul {
     fill: $color-SocialIcons;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   &__icons {
@@ -40,18 +42,18 @@
 
 @media screen and (min-width: $BPointPhoneStart) and (max-width: $BPointPhoneEnd) {
   .clients__icons {
-    width: 100%;
-
     flex-basis: calc((100% - 30px) / 2);
   }
 }
 
-@media screen and (min-width: $BPointTabletStart) and (max-width: $BPointtTabletEnd) { 
-
-  .clients__icons {
-    width: 100%;
-
-    flex-basis: calc((100% - 30px) / 3);
+@media screen and (min-width: $BPointTabletStart) and (max-width: $BPointtTabletEnd) {
+  .clients__ul {
+    margin: 0;
   }
 
+  .clients__icons {
+    max-width: 226px;
+    max-height: 92px;
+    flex-basis: calc((100% - 30px) / 3);
+  }
 }
