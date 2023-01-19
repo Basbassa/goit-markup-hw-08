@@ -192,6 +192,10 @@
     display: flex;
     justify-content: center;
   }
+
+  .footer__input {
+    max-width: calc(97%);
+  }
 }
 
 @media screen and (min-width: $BPointTabletStart) and (max-width: $BPointtTabletEnd) {
