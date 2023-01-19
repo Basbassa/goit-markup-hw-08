@@ -194,7 +194,7 @@
   }
 
   .footer__input {
-    max-width: calc(97%);
+    max-width: calc(90vw);
   }
 }
 
@@ -245,5 +245,9 @@
   .footer__div-button {
     margin-top: 20px;
     display: inline-block;
+  }
+
+  .footer__input {
+    outline: none;
   }
 }
