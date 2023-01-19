@@ -82,8 +82,7 @@
 @media screen and (min-width: $BPointTabletStart) and (max-width: $BPointtTabletEnd) {
   .team__ull {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
   }
 
