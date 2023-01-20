@@ -12,39 +12,29 @@
   object-fit: cover;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .headlamp {
-      background-image: url("../images/banners/bannerMobile@2x.png");
-    }
+    background-image: url("../images/banners/bannerMobile@2x.png");
   }
 
   @media (min-width: $BPointTabletStart) {
-    .headlamp {
-      background-image: url("../images/banners/bannerTablet.png");
-    }
+    background-image: url("../images/banners/bannerTablet.png");
   }
 
   @media (min-width: $BPointTabletStart) and (min-device-pixel-ratio: 2),
     (min-width: $BPointTabletStart) and (min-resolution: 192dpi),
     (min-width: $BPointTabletStart) and (min-resolution: 2dppx) {
-    .headlamp {
-      background-image: url("../images/banners/bannerTablet@2x.png");
-    }
+    background-image: url("../images/banners/bannerTablet@2x.png");
   }
 
   @media (min-width: $BPointDesktopStart) {
-    .headlamp {
-      max-width: 1600px;
-      margin-bottom: 94px;
-      background-image: url("../images/banners/bannerPC.jpg");
-    }
+    max-width: 1600px;
+    margin-bottom: 94px;
+    background-image: url("../images/banners/bannerPC.jpg");
   }
 
   @media (min-width: $BPointDesktopStart) and (min-device-pixel-ratio: 2),
     (min-width: $BPointDesktopStart) and (min-resolution: 192dpi),
     (min-width: $BPointDesktopStart) and (min-resolution: 2dppx) {
-    .headlamp {
-      background-image: url("../images/banners/bannerPC@2x.png");
-    }
+    background-image: url("../images/banners/bannerPC@2x.png");
   }
 
   &__description-h1 {
