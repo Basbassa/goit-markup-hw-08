@@ -1,5 +1,6 @@
 .footer {
   background-color: $colorFooter;
+  margin: 0px;
 
   @extend .all-links;
   @extend .mail-hover;
