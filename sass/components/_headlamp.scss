@@ -1,17 +1,50 @@
 .headlamp {
-  max-width: 1600px;
-  background-image: url("../images/banners/bannerPC.jpg"),
+  background-image: url("../images/banners/bannerMobile.png"),
     linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%);
-  background-size: 1600px;
   background-position: center;
   background-color: $color-colorH1AndFooter;
   color: $color-mainWhite;
   text-align: center;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   object-fit: cover;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url("../images/banners/bannerPC@2x.png");
+    .headlamp {
+      background-image: url("../images/banners/bannerMobile@2x.png");
+    }
+  }
+
+  @media (min-width: $BPointTabletStart) {
+    .headlamp {
+      background-image: url("../images/banners/bannerTablet.png");
+    }
+  }
+
+  @media (min-width: $BPointTabletStart) and (min-device-pixel-ratio: 2),
+    (min-width: $BPointTabletStart) and (min-resolution: 192dpi),
+    (min-width: $BPointTabletStart) and (min-resolution: 2dppx) {
+    .headlamp {
+      background-image: url("../images/banners/bannerTablet@2x.png");
+    }
+  }
+
+  @media (min-width: $BPointDesktopStart) {
+    .headlamp {
+      max-width: 1600px;
+      margin-bottom: 94px;
+      background-image: url("../images/banners/bannerPC.jpg");
+    }
+  }
+
+  @media (min-width: $BPointDesktopStart) and (min-device-pixel-ratio: 2),
+    (min-width: $BPointDesktopStart) and (min-resolution: 192dpi),
+    (min-width: $BPointDesktopStart) and (min-resolution: 2dppx) {
+    .headlamp {
+      background-image: url("../images/banners/bannerPC@2x.png");
+    }
   }
 
   &__description-h1 {
@@ -47,38 +80,5 @@
     cursor: pointer;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.headlamp {
-  @media (min-width: $BPointPhoneStart) {
-    background-image: url("../images/banners/bannerMobile.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-  }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url("../images/banners/bannerMobile2@x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-  }
-
-  @media (min-width: $BPointTabletStart) {
-    background-image: url("../images/banners/bannerTablet.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-  }
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url("../images/banners/bannerTablet@2x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
   }
 }
